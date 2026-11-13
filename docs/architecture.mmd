@@ -1,0 +1,5 @@
+flowchart LR
+  Config[servers.json] --> Monitor[Python TCP Monitor]
+  Monitor -->|TCP connection| Demo[Local Demo Server]
+  Monitor --> History[JSONL History]
+  Monitor --> Report[JSON Report]
